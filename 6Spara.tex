@@ -1,0 +1,112 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\frenchbsetup{StandardItemLabels} % pour conserver les puces lors des énumérations
+%\usepackage[babel=true,kerning=true]{microtype}
+\usepackage[margin=1cm]{geometry}  %permet le réglage des marges
+%\geometry{hmargin=1cm,vmargin=1cm} %réglage des marges
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{sansmath}
+% \sansmath
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%---------Packages MathPix
+
+
+%\usepackage[export]{adjustbox} %This package allows to adjust general (LA)TEX material in several ways using a key=value interface. It got inspired by the interface of \includegraphics from the graphicx package. This package also loads the trimclip package which code was once included in this package.
+\usepackage{bm}%Pour avoir des formules mathématiques en gras
+%\usepackage[version=4]{mhchem}
+%\usepackage{stmaryrd}
+%--------------------------
+
+\usepackage{parskip} %évite que chaque nouvelle ligne soit indentée
+\usepackage{setspace}
+%\usepackage{xcolor}%[usenames, dvipsnames]
+\usepackage{color,colortbl}
+\usepackage[table]{xcolor}
+%\usepackage{xspace}%va détecter lors de la compilation si une espace doit être ajoutée ou pas à la fin de la macro. On saisira donc : \newcommand\IP{imaginaires purs\xspace}
+%\usepackage{picins}%Pour mettre facilement des images à droite
+\usepackage{wrapfig}%Un peu la même chose
+\setlength{\columnsep}{1cm}
+\usepackage[overload]{textcase} 
+\usepackage{dashundergaps} %Pour faire des cours à trous
+\dashundergapssetup{dot,teacher-gap-format=dot,gap-format-adjust=false,
+gap-numbers=false,gap-widen,gap-extend-minimum=30pt,%ajoute x pt au minimum
+gap-extend-percent=40,%ajoute x % The result is compared to gap-extend-minimum and the larger of the two is used
+%gap-font=\Large,%\bfseries \itshape 
+%gap-number-format=\textnormal{ ^{(\thegapnumber)}},
+%gap-number-format = \,\textsuperscript{\normalfont(\thegapnumber)},
+%display-total-gaps,
+}
+
+\usepackage{siunitx}
+\sisetup{locale = FR}
+%%% Donne accès à la commande \num
+%Exemples : \num{.34}   \num{3e8}
+
+%\usepackage[np]{numprint}  %Autre paquet qui gère les espaces dans l'écriture des nombres
+
+%\abovedisplayskip=1ex    Pour changer l'espacement au-dessus des formules mathématiques \[ \]... Il y a aussi \belowdisplayskip ainsi que \abovedisplayshortskip et  \belowdisplayshortskip si la ligne qui PRECEDE est trop courte !
+
+%Assez des salamis, je passe au jambon - Je fais un carnage si ce car nage car je nage, moi, Karnaj !
+%Le comble pour un professeur de mathématique ? Mourir dans l’exercice de ses fonctions.
+
+%$\circlearrowleft$ $\circlearrowright$
+%$\curvearrowleft$ $\curvearrowright$
+
+\usepackage{cancel}
+%$x^2-\cancel{x}+\cancel{x}-1=x^2-1$        $\cancel{A}+\bcancel{B}+\xcancel{C}
+%---------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath, amsthm, amssymb} % nécessaire pour taper des maths
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lscape}  % pour le format paysage
+\usepackage{pifont}  % pour les symboles ding
+\usepackage{enumerate}  %Permet de renuméroter différement les questions
+%\usepackage{esvect}  % permet de faire des beaux vecteurs
+\usepackage{multicol}  % permet de fusionner des colonnes
+\usepackage{multirow}   % permet de fusionner des lignes
+%\usepackage{colortbl}  %couleur dans les tableaux
+\usepackage{tabularx}  % permet des tableaux plus compliqués mais pas simple à utiliser.
+\usepackage{diagbox}%---Des cellules en diagonales pour tableaux à doubles entrée
+\usepackage{array} %,makecell
+% \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}  % permet des cellules alignées à droite de taille fixée : écrire L{3cm} par exemple. Ne convient pas à une fusion
+% \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}} % même chose à gauche
+\newcolumntype{C}[1]{ >{\centering\arraybackslash} m{#1}}   % même chose au centre
+\newcolumntype{T}[1]{ >{\centering\arraybackslash\columncolor{teal!20}} m{#1}} %Avec couleur teal pour les titres de lignes
+
+%\setcellgapes{1pt}     %ajouter  \setcellgapes{4pt} avant un tableau avec des formules mathématiques hautes pour que cela ne touche pas le bord de la cellule
+%\makegapedcells
+\usepackage{graphicx} % pour l'insersion d'images, incompatible avec xcolor
+%\usepackage{caption} % pour des titres dans les tableaux flottants, pas forcément utile
+%\usepackage{variations} % permet des supers tableaux de variations
+\usepackage{frcursive}  % permet d'écrire comme un écolier, c'est très joli
+\everymath{\displaystyle} %pour que les maths soient à la bonne taille (limite, intégrale)
+%%%%%%%%%%%%%%%%%%%GrindEQ
+\usepackage{txfonts}
+\usepackage{mathdots}
+\usepackage[classicReIm]{kpfonts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{marvosym}   %c'est pour le symbol euro : code \EUR{}
+%\usepackage{pst-3dplot}  % cela fait des dessins en 2D mais je ne maitrise pas bien
+
+\usepackage{mathrsfs}
+%\usepackage{yhmath}%Pour les arcs de cercles mais des conflits : mieux ci-dessous, redéfini
+%\usepackage{tikz}
+\usepackage{tkz-euclide}%,pgflibraryshapes
+% \usepackage{pgfplots}
+\usetikzlibrary{calc,through}
+\usetikzlibrary{arrows}
+\usetikzlibrary[patterns]
+%Pattern names : horizontal lines, vertical lines, north east lines, north west lines, grid, crosshatch	dots, fivepointed stars, sixpointed stars, bricks, checkerboard
+
+\usetikzlibrary{positioning}
+%\usepackage{tkz-tab}
+%\usepackage{forest}%Pour les arbres de probabilités
+% \usetikzlibrary{shadows}%Pour les ombres Tikz
+%\usepackage{tikz-qtree}% Autre paquet pour les arbres
+%\usepackage{fancyhdr,txfonts,pxfonts}
+\usepackage[most]{tcolorbox}
